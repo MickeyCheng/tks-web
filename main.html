@@ -10,37 +10,91 @@
         <div class="container">
             <div class="top-panel">
                 <h2>Time Keeping System</h2>
-                <div class="inner-top">
-                    <input type="text" class="form-control">
+                <div class="inner-top row">
+                    <div class="col-md-3">                    
+                        <input type="text" class="form-control">
+                        <div class="login-numbers-section">
+                            <div>
+                                <button class="btn btn-primary">1</button>
+                                <button class="btn btn-primary">2</button>
+                                <button class="btn btn-primary">3</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">4</button>
+                                <button class="btn btn-primary">5</button>
+                                <button class="btn btn-primary">6</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">7</button>
+                                <button class="btn btn-primary">8</button>
+                                <button class="btn btn-primary">9</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">0</button>
+                                <button class="btn btn-primary">Clear</button>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn-danger" id="btn-save-login" data-toggle="modal" data-target="#login-modal">Login</button>
+                        
+                        <!-- MODAL -->
+                        <div class="modal fade" id="login-modal">
+                
+                <div class="modal-dialog modal-lg">
+                
+                    <div class="modal-content">
                     
-                    <div>
-                        <button class="btn btn-primary">1</button>
-                        <button class="btn btn-primary">2</button>
-                        <button class="btn btn-primary">3</button>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">4</button>
-                        <button class="btn btn-primary">5</button>
-                        <button class="btn btn-primary">6</button>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">7</button>
-                        <button class="btn btn-primary">8</button>
-                        <button class="btn btn-primary">9</button>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">0</button>
-                        <button class="btn btn-primary">Clear</button>
+                        <div class="modal-header"> 
+                            <h3>Add New Customer</h3>
+                            <button type="button" class="close" data-dismiss="modal" id="btnXCustForm"><span>&times;</span></button>
+                            <hr>
+                        </div>
+                        
+                        <div class="modal-body" >
+                            <form> 
+                                <div class="form-group">
+                                    <div>
+                                        <label for="txtCustomerName">Customer Name:</label>
+                                        <input type="text" id="txtCustomerName" placeholder="customer name here" class="form-control">
+                                    </div>
+                                    <div>
+                                        <label for="selCustomerCar">Customer Name:</label>
+                                        <select class="form-control" id="selCustomerCar">
+                                            <option>Ford</option>
+                                            <option>Morris Garages</option>
+                                            <option>Mitsubishi</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="txtLicensePlae">Customer Name:</label>
+                                        <input type="text" id="txtLicensePlate" placeholder="license plate here" class="form-control">
+                                    </div>
+                                    
+                                </div>
+                            
+                            </form>
+                        </div>
+                        
+                       <div class="modal-footer btnNew">
+                            <input type="button" class="form-control btn btn-success" value="Save New Customer" data-dismiss="modal">
+                        </div>
                     </div>
                 </div>
+            
+            </div>
+                    </div>
+
+                </div>
                 <div>
-                    <button type="button" class="btn-danger" id="btn-save-login">Login</button>
                 </div>
             </div>    
         
         </div><!-- #container-->
     
     </body>
-
+<script  src="js/jquery-3.4.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
 </html>
